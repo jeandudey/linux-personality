@@ -1,0 +1,13 @@
+[package]
+name = "linux-personality"
+version = "1.0.0"
+authors = ["Jean Pierre Dudey <jeandudey@hotmail.com>"]
+description = "Wrapper around Linux personality function."
+repository = "https://github.com/jeandudey/linux-personality"
+readme = "README.md"
+keywords = ["linux", "posix", "personality", "ffi"]
+license = "MIT"
+
+[dependencies]
+libc = "0.2"
+bitflags = "0.7"
