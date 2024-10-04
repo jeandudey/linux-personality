@@ -9,9 +9,9 @@
 //! ```rust
 //! extern crate linux_personality;
 //! use linux_personality::personality;
-//! use linux_personality::PER_LINUX;
+//! use linux_personality::Personality;
 //!
-//! let previous_personality = personality(PER_LINUX).unwrap();
+//! let previous_personality = personality(Personality::PER_LINUX).unwrap();
 //! ```
 //!
 //! This gets the personality.
@@ -193,9 +193,9 @@ mod tests {
     #[test]
     fn test_linux_per() {
         use super::personality;
-        use super::PER_LINUX;
+        use super::Personality;
 
-        personality(PER_LINUX).unwrap();
+        personality(Personality::PER_LINUX).unwrap();
     }
 
     #[test]
